@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 50vh;
+            background-color: coral;
+        }
+
+        .box{
+            width: 80px;
+            height: 50px;
+            background-color: rgb(40, 207, 185);
+          /*  animation: toshitaanimation  ;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+           /* animation-direction:alternate-reverse; */
+         /*  animation-play-state: paused;  */
+
+         animation: toshitaanimation 5s ease-in-out 1s 10 , 
+                    ghooma 3s ease-in 1s 7;
+
+        }
+
+        @keyframes toshitaanimation {
+            from{
+
+
+            }
+            to{
+                transform: translateX(1000px);
+               
+            }
+        }
+
+        @keyframes ghooma {
+            0%{
+                transform: rotate(80deg);
+            }
+            20%{
+                transform: rotate(100deg);
+            }
+            50%{
+                transform: rotate(150deg);
+            }
+            70%{
+                transform: rotate(200deg);
+            }
+            90%{
+                transform: rotate(280deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {}
+
+        .red {
+            background-color: chocolate;
+        }
+
+        #green{
+            background-color: greenyellow;
+        }
+
+        /*child selector*/
+        div>p{
+            background-color: blueviolet;
+        }
+        /* decendent selector*/
+        div p{
+            background-color: antiquewhite;    
+        }
+
+        /*universal selector*/
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        <!-- psuodo selecter -->
+        a:visited{
+            color:blue;
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: aquamarine;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+
+        p:first-child{
+            background-color:orchid;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>111111111111111111..</p>
+        <p>222222222222222222..</p>
+    </main>
+    <div class="red">i am divvv
+        <p>jfjgwhgfjhd</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quas.</p>
+    </div>
+    <div id="green">yowwwwwww
+        <p>jbshvbjhsb</p>
+        <article>
+            <p>
+                asdfgyhbcvb
+            </p>
+        </article>
+    </div>
+
+    <a href="http://www.google.com">goo too google</a>
+    <a href="http://www.pintrest.com">lalala pintredt</a>
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+html {
+box-sizing: border-box;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+li{
+    list-style: none ;
+}
+
+body {
+    background-color: #016ff9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    text-transform: uppercase;
+     
+}
+
+.pricing-plan {
+/* 
+    height:100%;  
+    width : 35%;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    display: grid; */
+
+
+    border-bottom: 2px solid #e1f1ff;
+ 
+   
+
+}
+
+.pricing-plan  last-child { 
+    border-bottom: none;
+}
+
+
+.princing-button{
+    /* height:15px;
+    width:fit-content; */
+    margin:25px 0;
+    padding:15px 35px;
+    border-radius: 10px;
+    color: #348efe;
+    border: 1px solid #9dd1ff;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+}
+
+.princing-button.is-featured{
+    background-color: #48aaff;
+    color: #ffffff;
+}
+
+
+.pricing-img {
+    margin-bottom: 25px;
+    /* height:100%; */
+    max-width: 100%;
+    /* object-fit: cover; */
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.pricing-features{
+    margin: 50px 0 25px;
+    color: #016ff9;
+  
+}
+
+.pricing-features_list {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 2px solid #e1f1ff;
+}
+.pricing-features_list:last-child{
+    border-bottom: 2px solid #e1f1ff;
+} 
+
+.pricing-price {
+    font-size:34px;
+    font-weight: 700;
+    text-align: center;
+    color: #016ff9;
+    display: block;
+}
+
+.princing-button:hover, .princing-button:focus{
+    background-color: #e1f1ff;
+} 
+.princing-button.is-featured:hover, .princing-button.is-featured:focus{
+    background-color: #269aff;
+} 
+
+@media (min-width:900px){
+    .panel {
+        flex-direction: row;
+
+    }
+
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 2px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
